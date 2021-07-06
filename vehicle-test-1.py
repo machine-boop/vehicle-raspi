@@ -13,7 +13,7 @@ def getch(): #key
     finally:
         termios.tcsetattr(fd,termios.TCSADRAIN,old)
 
-class KeyEvenThread(threading.thread):
+class KeyEvenThread(threading.Thread):
     def run(self):
         print("thread")
         Fun()
