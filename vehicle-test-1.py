@@ -77,7 +77,7 @@ def funSpeed(i1,i2):
     p2.ChangeDutyCycle(dc2)
 
 def funInit():
-    GPIO.setmode(GPIO.BOARD)
+    GPIO.setmode(GPIO.BCM)
     GPIO.setup(MotorIN1,GPIO.OUT)
     GPIO.setup(MotorIN2,GPIO.OUT)
     GPIO.setup(MotorEN1,GPIO.OUT)
@@ -91,12 +91,12 @@ def funExit():
     GPIO.output(MotorEN2,GPIO.LOW)
     GPIO.cleanup()
 
-MotorIN1=11
-MotorIN2=12
-MotorEN1=13
-MotorIN3=15
-MotorIN4=16
-MotorEN2=18
+MotorIN1=17
+MotorIN2=18
+MotorEN1=21
+MotorIN3=22
+MotorIN4=23
+MotorEN2=24
 
 print("Press 'q'to exit")
 print("'w'=forward,'x'=backward,'a'=left,'d'=right,'s'=stop")
