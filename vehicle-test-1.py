@@ -92,11 +92,11 @@ def funExit():
     GPIO.cleanup()
 
 MotorIN1=17
-MotorIN2=18
-MotorEN1=21
-MotorIN3=22
-MotorIN4=23
-MotorEN2=24
+MotorIN2=27
+MotorEN1=18
+MotorIN3=21
+MotorIN4=20
+MotorEN2=19
 
 print("Press 'q'to exit")
 print("'w'=forward,'x'=backward,'a'=left,'d'=right,'s'=stop")
